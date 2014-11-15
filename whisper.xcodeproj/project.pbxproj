@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BEFA58B31A174300009DF40E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58B21A174300009DF40E /* main.m */; };
+		BEFA58B61A174300009DF40E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58B51A174300009DF40E /* AppDelegate.m */; };
+		BEFA58B91A174300009DF40E /* whisper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58B71A174300009DF40E /* whisper.xcdatamodeld */; };
+		BEFA58BC1A174300009DF40E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58BB1A174300009DF40E /* MasterViewController.m */; };
+		BEFA58BF1A174300009DF40E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58BE1A174300009DF40E /* DetailViewController.m */; };
+		BEFA58C21A174300009DF40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFA58C01A174300009DF40E /* Main.storyboard */; };
+		BEFA58C41A174300009DF40E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFA58C31A174300009DF40E /* Images.xcassets */; };
+		BEFA58C71A174300009DF40E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFA58C51A174300009DF40E /* LaunchScreen.xib */; };
+		BEFA58D31A174301009DF40E /* whisperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58D21A174301009DF40E /* whisperTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BEFA58CD1A174301009DF40E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEFA58A51A174300009DF40E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEFA58AC1A174300009DF40E;
+			remoteInfo = whisper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BEFA58AD1A174300009DF40E /* whisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFA58B11A174300009DF40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFA58B21A174300009DF40E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEFA58B41A174300009DF40E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEFA58B51A174300009DF40E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEFA58B81A174300009DF40E /* whisper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = whisper.xcdatamodel; sourceTree = "<group>"; };
+		BEFA58BA1A174300009DF40E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		BEFA58BB1A174300009DF40E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		BEFA58BD1A174300009DF40E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		BEFA58BE1A174300009DF40E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BEFA58C11A174300009DF40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BEFA58C31A174300009DF40E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BEFA58C61A174300009DF40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BEFA58CC1A174301009DF40E /* whisperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whisperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEFA58D11A174301009DF40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEFA58D21A174301009DF40E /* whisperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = whisperTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEFA58AA1A174300009DF40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFA58C91A174301009DF40E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEFA58A41A174300009DF40E = {
+			isa = PBXGroup;
+			children = (
+				BEFA58AF1A174300009DF40E /* whisper */,
+				BEFA58CF1A174301009DF40E /* whisperTests */,
+				BEFA58AE1A174300009DF40E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEFA58AE1A174300009DF40E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEFA58AD1A174300009DF40E /* whisper.app */,
+				BEFA58CC1A174301009DF40E /* whisperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEFA58AF1A174300009DF40E /* whisper */ = {
+			isa = PBXGroup;
+			children = (
+				BEFA58B41A174300009DF40E /* AppDelegate.h */,
+				BEFA58B51A174300009DF40E /* AppDelegate.m */,
+				BEFA58BA1A174300009DF40E /* MasterViewController.h */,
+				BEFA58BB1A174300009DF40E /* MasterViewController.m */,
+				BEFA58BD1A174300009DF40E /* DetailViewController.h */,
+				BEFA58BE1A174300009DF40E /* DetailViewController.m */,
+				BEFA58C01A174300009DF40E /* Main.storyboard */,
+				BEFA58C31A174300009DF40E /* Images.xcassets */,
+				BEFA58C51A174300009DF40E /* LaunchScreen.xib */,
+				BEFA58B71A174300009DF40E /* whisper.xcdatamodeld */,
+				BEFA58B01A174300009DF40E /* Supporting Files */,
+			);
+			path = whisper;
+			sourceTree = "<group>";
+		};
+		BEFA58B01A174300009DF40E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEFA58B11A174300009DF40E /* Info.plist */,
+				BEFA58B21A174300009DF40E /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEFA58CF1A174301009DF40E /* whisperTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEFA58D21A174301009DF40E /* whisperTests.m */,
+				BEFA58D01A174301009DF40E /* Supporting Files */,
+			);
+			path = whisperTests;
+			sourceTree = "<group>";
+		};
+		BEFA58D01A174301009DF40E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEFA58D11A174301009DF40E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEFA58AC1A174300009DF40E /* whisper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFA58D61A174301009DF40E /* Build configuration list for PBXNativeTarget "whisper" */;
+			buildPhases = (
+				BEFA58A91A174300009DF40E /* Sources */,
+				BEFA58AA1A174300009DF40E /* Frameworks */,
+				BEFA58AB1A174300009DF40E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = whisper;
+			productName = whisper;
+			productReference = BEFA58AD1A174300009DF40E /* whisper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEFA58CB1A174301009DF40E /* whisperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEFA58D91A174301009DF40E /* Build configuration list for PBXNativeTarget "whisperTests" */;
+			buildPhases = (
+				BEFA58C81A174301009DF40E /* Sources */,
+				BEFA58C91A174301009DF40E /* Frameworks */,
+				BEFA58CA1A174301009DF40E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEFA58CE1A174301009DF40E /* PBXTargetDependency */,
+			);
+			name = whisperTests;
+			productName = whisperTests;
+			productReference = BEFA58CC1A174301009DF40E /* whisperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEFA58A51A174300009DF40E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Whistlester LLC";
+				TargetAttributes = {
+					BEFA58AC1A174300009DF40E = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					BEFA58CB1A174301009DF40E = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = BEFA58AC1A174300009DF40E;
+					};
+				};
+			};
+			buildConfigurationList = BEFA58A81A174300009DF40E /* Build configuration list for PBXProject "whisper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BEFA58A41A174300009DF40E;
+			productRefGroup = BEFA58AE1A174300009DF40E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEFA58AC1A174300009DF40E /* whisper */,
+				BEFA58CB1A174301009DF40E /* whisperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEFA58AB1A174300009DF40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFA58C21A174300009DF40E /* Main.storyboard in Resources */,
+				BEFA58C71A174300009DF40E /* LaunchScreen.xib in Resources */,
+				BEFA58C41A174300009DF40E /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFA58CA1A174301009DF40E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEFA58A91A174300009DF40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFA58BF1A174300009DF40E /* DetailViewController.m in Sources */,
+				BEFA58BC1A174300009DF40E /* MasterViewController.m in Sources */,
+				BEFA58B61A174300009DF40E /* AppDelegate.m in Sources */,
+				BEFA58B31A174300009DF40E /* main.m in Sources */,
+				BEFA58B91A174300009DF40E /* whisper.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEFA58C81A174301009DF40E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEFA58D31A174301009DF40E /* whisperTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BEFA58CE1A174301009DF40E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEFA58AC1A174300009DF40E /* whisper */;
+			targetProxy = BEFA58CD1A174301009DF40E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEFA58C01A174300009DF40E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEFA58C11A174300009DF40E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BEFA58C51A174300009DF40E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEFA58C61A174300009DF40E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEFA58D41A174301009DF40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BEFA58D51A174301009DF40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BEFA58D71A174301009DF40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = whisper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BEFA58D81A174301009DF40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = whisper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BEFA58DA1A174301009DF40E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = whisperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whisper.app/whisper";
+			};
+			name = Debug;
+		};
+		BEFA58DB1A174301009DF40E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = whisperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/whisper.app/whisper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEFA58A81A174300009DF40E /* Build configuration list for PBXProject "whisper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFA58D41A174301009DF40E /* Debug */,
+				BEFA58D51A174301009DF40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEFA58D61A174301009DF40E /* Build configuration list for PBXNativeTarget "whisper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFA58D71A174301009DF40E /* Debug */,
+				BEFA58D81A174301009DF40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BEFA58D91A174301009DF40E /* Build configuration list for PBXNativeTarget "whisperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEFA58DA1A174301009DF40E /* Debug */,
+				BEFA58DB1A174301009DF40E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BEFA58B71A174300009DF40E /* whisper.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BEFA58B81A174300009DF40E /* whisper.xcdatamodel */,
+			);
+			currentVersion = BEFA58B81A174300009DF40E /* whisper.xcdatamodel */;
+			path = whisper.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BEFA58A51A174300009DF40E /* Project object */;
+}

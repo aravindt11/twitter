@@ -2,30 +2,27 @@
 //  MasterViewController.m
 //  whisper
 //
-//  Created by Aravind Thiyagarajan on 11/15/14.
+//  Created by Aravind Thiyagarajan on 11/16/14.
 //  Copyright (c) 2014 Whistlester LLC. All rights reserved.
 //
 
-#import "MasterViewController.h"
-#import "DetailViewController.h"
+#import "WHSavedTweetController.h"
+#import "WHTwitterTableViewCell.h"
 
-@interface MasterViewController ()
+@interface WHSavedTweetController ()
 
 @end
 
-@implementation MasterViewController
+@implementation WHSavedTweetController
 
-- (void)awakeFromNib {
-    [super awakeFromNib];
-}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+   
 }
 
 - (void)didReceiveMemoryWarning {
@@ -33,38 +30,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)insertNewObject:(id)sender {
-    NSManagedObjectContext *context = [self.fetchedResultsController managedObjectContext];
-    NSEntityDescription *entity = [[self.fetchedResultsController fetchRequest] entity];
-    NSManagedObject *newManagedObject = [NSEntityDescription insertNewObjectForEntityForName:[entity name] inManagedObjectContext:context];
-        
-    // If appropriate, configure the new managed object.
-    // Normally you should use accessor methods, but using KVC here avoids the need to add a custom class to the template.
-    [newManagedObject setValue:[NSDate date] forKey:@"timeStamp"];
-        
-    // Save the context.
-    NSError *error = nil;
-    if (![context save:&error]) {
-        // Replace this implementation with code to handle the error appropriately.
-        // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-        NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-        abort();
-    }
-}
 
-#pragma mark - Segues
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([[segue identifier] isEqualToString:@"showDetail"]) {
-        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
-        NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-        [[segue destinationViewController] setDetailItem:object];
-    }
-}
+
 
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    
     return [[self.fetchedResultsController sections] count];
 }
 
@@ -74,7 +47,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    
+    static NSString *LoadCellIdentifier = @"LoadingCell";
+    WHTwitterTableViewCell *cell = (WHTwitterTableViewCell *)[tableView dequeueReusableCellWithIdentifier:LoadCellIdentifier forIndexPath:indexPath];
     [self configureCell:cell atIndexPath:indexPath];
     return cell;
 }
@@ -91,17 +67,31 @@
             
         NSError *error = nil;
         if (![context save:&error]) {
-            // Replace this implementation with code to handle the error appropriately.
-            // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Issue in saving" message:@"Please try again after deleting the app" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+            [alert show];
             NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
-            abort();
+            
         }
     }
 }
 
-- (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
+- (void)configureCell:(WHTwitterTableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
     NSManagedObject *object = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
+    
+    
+   //Converting date to short format
+    NSString *dateString = [NSDateFormatter localizedStringFromDate:[object valueForKey:@"timeStamp"]
+                                                          dateStyle:NSDateFormatterLongStyle
+                                                          timeStyle:NSDateFormatterNoStyle];
+    
+    
+    //Loading the tableview cell
+    UIImage *image = [UIImage imageWithData:[object valueForKey:@"profileImage"]];
+    cell.profileImage.image=image;
+    cell.tweet.text=[[object valueForKey:@"tweet"]description];
+    cell.date.text=dateString;
+    cell.name.text=[[object valueForKey:@"name"]description];
+    
 }
 
 #pragma mark - Fetched results controller
@@ -134,8 +124,8 @@
     
 	NSError *error = nil;
 	if (![self.fetchedResultsController performFetch:&error]) {
-	     // Replace this implementation with code to handle the error appropriately.
-	     // abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development. 
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Issue in saving" message:@"Please try again after deleting the app" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil];
+        [alert show];
 	    NSLog(@"Unresolved error %@, %@", error, [error userInfo]);
 	    abort();
 	}
@@ -196,14 +186,5 @@
     [self.tableView endUpdates];
 }
 
-/*
-// Implementing the above methods to update the table view in response to individual changes may have performance implications if a large number of changes are made simultaneously. If this proves to be an issue, you can instead just implement controllerDidChangeContent: which notifies the delegate that all section and object changes have been processed. 
- 
- - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller
-{
-    // In the simplest, most efficient, case, reload the table view.
-    [self.tableView reloadData];
-}
- */
 
 @end

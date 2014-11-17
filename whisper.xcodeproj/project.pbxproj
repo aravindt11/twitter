@@ -7,11 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC7B8B481A19A82D008FDBD9 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE47CC621A179F6300DD532D /* SDWebImage.framework */; };
+		BE47CBAB1A1756E300DD532D /* WHSearchTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE47CBAA1A1756E300DD532D /* WHSearchTableViewController.m */; };
+		BE47CBAD1A175E3700DD532D /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE47CBAC1A175E3700DD532D /* Social.framework */; };
+		BE47CBAF1A175E3E00DD532D /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE47CBAE1A175E3E00DD532D /* Accounts.framework */; };
+		BE47CBB31A177BE400DD532D /* WHTwitterTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE47CBB21A177BE400DD532D /* WHTwitterTableViewCell.m */; };
+		BE47CBB51A1789D300DD532D /* image1.png in Resources */ = {isa = PBXBuildFile; fileRef = BE47CBB41A1789D300DD532D /* image1.png */; };
+		BE47CC3B1A179C4500DD532D /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE47CC031A1793BC00DD532D /* ImageIO.framework */; };
+		BE47CC751A1993C600DD532D /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = BE47CC741A1993C600DD532D /* Reachability.m */; };
+		BE47CC771A1995C000DD532D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE47CC761A1995C000DD532D /* SystemConfiguration.framework */; };
 		BEFA58B31A174300009DF40E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58B21A174300009DF40E /* main.m */; };
 		BEFA58B61A174300009DF40E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58B51A174300009DF40E /* AppDelegate.m */; };
 		BEFA58B91A174300009DF40E /* whisper.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58B71A174300009DF40E /* whisper.xcdatamodeld */; };
-		BEFA58BC1A174300009DF40E /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58BB1A174300009DF40E /* MasterViewController.m */; };
-		BEFA58BF1A174300009DF40E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58BE1A174300009DF40E /* DetailViewController.m */; };
+		BEFA58BC1A174300009DF40E /* WHSavedTweetController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFA58BB1A174300009DF40E /* WHSavedTweetController.m */; };
 		BEFA58C21A174300009DF40E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEFA58C01A174300009DF40E /* Main.storyboard */; };
 		BEFA58C41A174300009DF40E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEFA58C31A174300009DF40E /* Images.xcassets */; };
 		BEFA58C71A174300009DF40E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEFA58C51A174300009DF40E /* LaunchScreen.xib */; };
@@ -29,16 +37,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BE47CBA91A1756E300DD532D /* WHSearchTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHSearchTableViewController.h; sourceTree = "<group>"; };
+		BE47CBAA1A1756E300DD532D /* WHSearchTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHSearchTableViewController.m; sourceTree = "<group>"; };
+		BE47CBAC1A175E3700DD532D /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		BE47CBAE1A175E3E00DD532D /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		BE47CBB11A177BE400DD532D /* WHTwitterTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WHTwitterTableViewCell.h; sourceTree = "<group>"; };
+		BE47CBB21A177BE400DD532D /* WHTwitterTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WHTwitterTableViewCell.m; sourceTree = "<group>"; };
+		BE47CBB41A1789D300DD532D /* image1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image1.png; sourceTree = "<group>"; };
+		BE47CC031A1793BC00DD532D /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		BE47CC621A179F6300DD532D /* SDWebImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDWebImage.framework; path = whisper/SDWebImage.framework; sourceTree = "<group>"; };
+		BE47CC731A1993C600DD532D /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		BE47CC741A1993C600DD532D /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		BE47CC761A1995C000DD532D /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BEFA58AD1A174300009DF40E /* whisper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whisper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEFA58B11A174300009DF40E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEFA58B21A174300009DF40E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		BEFA58B41A174300009DF40E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BEFA58B51A174300009DF40E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		BEFA58B81A174300009DF40E /* whisper.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = whisper.xcdatamodel; sourceTree = "<group>"; };
-		BEFA58BA1A174300009DF40E /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		BEFA58BB1A174300009DF40E /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		BEFA58BD1A174300009DF40E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		BEFA58BE1A174300009DF40E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		BEFA58BA1A174300009DF40E /* WHSavedTweetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WHSavedTweetController.h; sourceTree = "<group>"; };
+		BEFA58BB1A174300009DF40E /* WHSavedTweetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WHSavedTweetController.m; sourceTree = "<group>"; };
 		BEFA58C11A174300009DF40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BEFA58C31A174300009DF40E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		BEFA58C61A174300009DF40E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -52,6 +70,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC7B8B481A19A82D008FDBD9 /* SDWebImage.framework in Frameworks */,
+				BE47CC771A1995C000DD532D /* SystemConfiguration.framework in Frameworks */,
+				BE47CC3B1A179C4500DD532D /* ImageIO.framework in Frameworks */,
+				BE47CBAF1A175E3E00DD532D /* Accounts.framework in Frameworks */,
+				BE47CBAD1A175E3700DD532D /* Social.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,48 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE47CBB01A175E5C00DD532D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE47CC761A1995C000DD532D /* SystemConfiguration.framework */,
+				BE47CC621A179F6300DD532D /* SDWebImage.framework */,
+				BE47CC031A1793BC00DD532D /* ImageIO.framework */,
+				BE47CBAC1A175E3700DD532D /* Social.framework */,
+				BE47CBAE1A175E3E00DD532D /* Accounts.framework */,
+			);
+			name = Frameworks;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		BE47CC6B1A17E6C700DD532D /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				BE47CBB11A177BE400DD532D /* WHTwitterTableViewCell.h */,
+				BE47CBB21A177BE400DD532D /* WHTwitterTableViewCell.m */,
+			);
+			name = TableViewCell;
+			sourceTree = "<group>";
+		};
+		BE47CC6C1A17E6DE00DD532D /* ViewContoller */ = {
+			isa = PBXGroup;
+			children = (
+				BEFA58BA1A174300009DF40E /* WHSavedTweetController.h */,
+				BEFA58BB1A174300009DF40E /* WHSavedTweetController.m */,
+				BE47CBA91A1756E300DD532D /* WHSearchTableViewController.h */,
+				BE47CBAA1A1756E300DD532D /* WHSearchTableViewController.m */,
+			);
+			name = ViewContoller;
+			sourceTree = "<group>";
+		};
+		BE47CC721A1993B600DD532D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				BE47CC731A1993C600DD532D /* Reachability.h */,
+				BE47CC741A1993C600DD532D /* Reachability.m */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
 		BEFA58A41A174300009DF40E = {
 			isa = PBXGroup;
 			children = (
@@ -88,15 +153,13 @@
 			children = (
 				BEFA58B41A174300009DF40E /* AppDelegate.h */,
 				BEFA58B51A174300009DF40E /* AppDelegate.m */,
-				BEFA58BA1A174300009DF40E /* MasterViewController.h */,
-				BEFA58BB1A174300009DF40E /* MasterViewController.m */,
-				BEFA58BD1A174300009DF40E /* DetailViewController.h */,
-				BEFA58BE1A174300009DF40E /* DetailViewController.m */,
 				BEFA58C01A174300009DF40E /* Main.storyboard */,
-				BEFA58C31A174300009DF40E /* Images.xcassets */,
-				BEFA58C51A174300009DF40E /* LaunchScreen.xib */,
 				BEFA58B71A174300009DF40E /* whisper.xcdatamodeld */,
+				BE47CC721A1993B600DD532D /* Service */,
 				BEFA58B01A174300009DF40E /* Supporting Files */,
+				BE47CC6C1A17E6DE00DD532D /* ViewContoller */,
+				BE47CC6B1A17E6C700DD532D /* TableViewCell */,
+				BE47CBB01A175E5C00DD532D /* Frameworks */,
 			);
 			path = whisper;
 			sourceTree = "<group>";
@@ -104,6 +167,9 @@
 		BEFA58B01A174300009DF40E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				BE47CBB41A1789D300DD532D /* image1.png */,
+				BEFA58C31A174300009DF40E /* Images.xcassets */,
+				BEFA58C51A174300009DF40E /* LaunchScreen.xib */,
 				BEFA58B11A174300009DF40E /* Info.plist */,
 				BEFA58B21A174300009DF40E /* main.m */,
 			);
@@ -217,6 +283,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE47CBB51A1789D300DD532D /* image1.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,9 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BEFA58BF1A174300009DF40E /* DetailViewController.m in Sources */,
-				BEFA58BC1A174300009DF40E /* MasterViewController.m in Sources */,
+				BE47CBAB1A1756E300DD532D /* WHSearchTableViewController.m in Sources */,
+				BEFA58BC1A174300009DF40E /* WHSavedTweetController.m in Sources */,
 				BEFA58B61A174300009DF40E /* AppDelegate.m in Sources */,
+				BE47CC751A1993C600DD532D /* Reachability.m in Sources */,
+				BE47CBB31A177BE400DD532D /* WHTwitterTableViewCell.m in Sources */,
 				BEFA58B31A174300009DF40E /* main.m in Sources */,
 				BEFA58B91A174300009DF40E /* whisper.xcdatamodeld in Sources */,
 			);
@@ -310,6 +379,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -344,6 +414,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -353,9 +424,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/whistlester/Downloads,
+					"$(PROJECT_DIR)/whisper",
+				);
 				INFOPLIST_FILE = whisper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -363,9 +441,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					/Users/whistlester/Downloads,
+					"$(PROJECT_DIR)/whisper",
+				);
 				INFOPLIST_FILE = whisper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = " -ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -376,6 +461,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -395,6 +481,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
+					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = whisperTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -422,6 +509,7 @@
 				BEFA58D81A174301009DF40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BEFA58D91A174301009DF40E /* Build configuration list for PBXNativeTarget "whisperTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +518,7 @@
 				BEFA58DB1A174301009DF40E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
